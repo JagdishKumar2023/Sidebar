@@ -4,8 +4,21 @@
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+}
+
 .mainContainer {
   display: flex;
+  gap: 40px;
+}
+
+main {
+  padding: 1 0px;
+}
+
+.title {
+  font-size: 30px;
 }
 
 .sidebar {
@@ -45,6 +58,26 @@
   border-radius: 15px;
   background: rgb(238, 238, 238);
   padding: 10px;
+}
+
+.link {
+  display: flex;
+  color: white;
+  gap: 20px;
+  padding-right: 4px solid transparent;
+  /* transition: 0.2 cubic-bezier(0.6, -0.28, 0.735, 0.045); */
+}
+
+.link:hover {
+  border-right: 4px solid transparent;
+  transition: 0.2 cubic-bezier(0.6, -0.28, 0.735, 0.735);
+  background: rgb(45, 51, 89);
+}
+
+.active {
+  border-right: 4px solid transparent;
+  transition: 0.2 cubic-bezier(0.6, -0.28, 0.735, 0.735);
+  background: rgb(45, 51, 89);
 }
 
 /* Responsive adjustments */
